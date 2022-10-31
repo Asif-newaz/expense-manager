@@ -5,3 +5,12 @@
   width: 50rem;
   max-width: 95%;
 }
+
+.button {
+  padding: 0.8rem;
+  margin-left: 0.5rem;
+  background-color: aliceblue;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
