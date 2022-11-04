@@ -35,10 +35,13 @@ const App = () => {
   //   React.createElement("h2", {}),
   //   React.createElement(Expenses, { items: expenses })
   // );
-
+  const childDataHandler = (childDate) => {
+    return console.log("From child: " + childDate);
+  };
+  console.log("Asif");
   return (
     <div>
-      <NewExpense />
+      <NewExpense onChildData={childDataHandler} />
       <Expenses items={expenses} />
     </div>
   );
