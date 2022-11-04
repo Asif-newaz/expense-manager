@@ -6,9 +6,19 @@ const NewExpense = (props) => {
   const data = "I am from child component!";
   props.onChildData(data);
 
+  const saveExpenseDataHandler = (enteredExpenseData) => {
+    const expenseData = {
+      ...enteredExpenseData,
+      id: Math.random().toString(),
+      name: "Visa card",
+    };
+
+    console.log(expenseData);
+  };
+
   return (
     <div className="new-expense">
-      <ExpenseForm />
+      <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
     </div>
   );
 };

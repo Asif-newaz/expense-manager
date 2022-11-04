@@ -38,7 +38,7 @@ const App = () => {
   const childDataHandler = (childDate) => {
     return console.log("From child: " + childDate);
   };
-  console.log("Asif");
+
   return (
     <div>
       <NewExpense onChildData={childDataHandler} />
