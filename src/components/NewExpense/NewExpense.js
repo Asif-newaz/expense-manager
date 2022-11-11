@@ -3,7 +3,8 @@ import "./NewExpense.css";
 import ExpenseForm from "./ExpenseForm";
 
 const NewExpense = (props) => {
-  const data = "I am from child component!";
+  //Basic practice child to parent data transfer
+  const data = "Learning how pass data from child to parent component!!!";
   props.onChildData(data);
 
   const saveExpenseDataHandler = (enteredExpenseData) => {
@@ -13,7 +14,7 @@ const NewExpense = (props) => {
       name: "Visa card",
     };
 
-    console.log(expenseData);
+    props.onAddExpense(expenseData);
   };
 
   return (
