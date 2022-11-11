@@ -7,7 +7,7 @@ import "./ExpenseItem.css";
 const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
 
-  console.log("ExpenseItems evaluated by react!");
+  // console.log("ExpenseItems evaluated by react!");
 
   const clickHandler = () => {
     setTitle("Updated!");
