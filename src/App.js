@@ -40,7 +40,7 @@ const App = () => {
   };
 
   return (
-    <div style={{backgroundColor: "#000"}}>
+    <div>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
